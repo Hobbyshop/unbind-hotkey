@@ -15,8 +15,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"modid" {
-			sourceSet sourceSets.main
+		"unbind-hotkey" {
 			sourceSet sourceSets.client
 		}
 	}

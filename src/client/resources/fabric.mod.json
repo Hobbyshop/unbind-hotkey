@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "unbind-hotkey",
+	"version": "${version}",
+	"name": "Unbind Hotkey",
+	"description": "Adds a button to your controls screen to unbind keys.",
+	"authors": [
+		"Neptune"
+	],
+	"contact": {
+		"sources": "https://github.com/Hobbyshop/unbind-hotkey"
+	},
+	"license": "MIT",
+	"icon": "assets/unbindkey/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.neptuneclient.unbindkey.ClientMain"
+		]
+	},
+	"mixins": [
+		{
+			"config": "unbindkey.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
